@@ -1,0 +1,347 @@
+<html>
+  <head>
+    <title>Landing Page</title>
+    <style>
+      .navbar {
+        display: flex;
+
+        /* This is used to make the navbar sticky, So that the
+        navbar stays at the top part even if we scroll */
+        position: sticky;
+        align-items: center;
+        justify-content: center;
+        top: 0px;
+        width: 1440px;
+        height: 80px;
+        /*it specifies the mouse cursor to be displayed
+        when it is pointed over the element */
+        cursor: pointer;
+      }
+
+      .nav-list {
+        width: 50%;
+        display: flex;
+      }
+
+      .navbar ul {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+      }
+
+      .leftNav {
+        height: 45px;
+        width: 110px;
+      }
+      .nav-list li {
+        list-style: none;
+        padding: 26px 30px;
+        font-size: 20px;
+        text-align: center;
+        align-items: center;
+      }
+      .navbar img {
+        height: 45px;
+        width: 110px;
+        align-items: center;
+        padding-left: 7%;
+        margin-left: 5px;
+      }
+
+      .nav-list li a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .nav-list li a:hover {
+        color: black;
+      }
+
+      .rightNav {
+        width: 50%;
+        text-align: right;
+      }
+
+      .background {
+        top: 0px;
+        left: 0px;
+        width: 1440px;
+        height: 80px;
+
+        /* UI Properties */
+
+        background: #ffffff 0% 0% no-repeat padding-box;
+        opacity: 1;
+      }
+
+      .MainHeading {
+        /* top: 120px;
+        left: 281px;
+        width: 878px;
+        height: 136px; */
+
+        text-align: center;
+        font: normal normal bold 50px/68px Open Sans;
+        letter-spacing: 0px;
+        color: #3a3a3a;
+        opacity: 1;
+      }
+
+      .TextBelowMainHeading,
+      .HeadingText {
+        /* top: 276px;
+        left: 395px;
+        width: 651px;
+        height: 49px; */
+
+        /* UI Properties */
+
+        text-align: center;
+        letter-spacing: 0px;
+        color: #3f3f3f;
+        opacity: 1;
+      }
+
+      .signIn {
+        margin-right: 40px;
+      }
+      .signIn_btn {
+        height: 48px;
+        width: 130px;
+        background-color: #0066b2;
+        border-radius: 6px;
+        color: white;
+        margin: 4px 2px;
+        border-color: aliceblue;
+        font-size: 16px;
+      }
+      .SampleInterview {
+        height: 48px;
+        width: 175px;
+        background-color: white;
+        border-radius: 4px;
+        color: #3e67b1;
+
+        margin: 4px 2px;
+        border-color: #3e67b1;
+        font-size: 16px;
+      }
+      .ContactForADemo {
+        height: 48px;
+        width: 200px;
+        background-color: #3e67b1;
+        border-radius: 4px;
+        color: white;
+        margin: 4px 2px;
+        border-color: #3e67b1;
+        font-size: 16px;
+      }
+      .middlePart {
+        background-color: #f4f6fb;
+      }
+
+      .stats {
+        background-color: white;
+        opacity: 1;
+      }
+
+      .stats .Count {
+        font-weight: bold;
+        margin-right: 20px;
+        font-size: 25px;
+      }
+      .stats .StatsList .StatText {
+        margin: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 20px;
+      }
+
+      .StatsList li {
+        list-style: none;
+        padding: 26px 30px;
+        font-size: 20px;
+        text-align: center;
+        align-items: center;
+      }
+
+      .StatsList {
+        width: 70%;
+        display: flex;
+      }
+      .Whole {
+        background-color: #f4f6fb;
+      }
+      .Heading {
+        text-align: center;
+        font: normal normal 600 36px/49px Open Sans;
+        letter-spacing: 0px;
+        color: #3a3a3a;
+        opacity: 1;
+      }
+
+      .Image1 {
+        margin-left: 17%;
+        width: 120%;
+        height: 60%;
+      }
+
+      .OurMission,
+      .OurVision {
+        font-family: sans-serif;
+        text-align: left;
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 0px;
+        color: #3a3a3a;
+        opacity: 1;
+        line-height: 5%;
+      }
+      .OurMissionText,
+      .OurVisionText {
+        margin-right: 120px;
+        font-family: sans-serif;
+        font-size: 18px;
+        /* UI Properties */
+
+        text-align: left;
+        letter-spacing: 0px;
+        color: #3f3f3f;
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar background">
+      <img class="IPanelIcon" src="Images/output1.png" />
+      <ul class="nav-list">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#AbourUs">About Us</a></li>
+        <li><a href="#Services">#Services</a></li>
+        <li><a href="#WhyIpannel">Why Ipannel</a></li>
+        <li><a href="#Home">Contact Us</a></li>
+      </ul>
+      <!--sign in button-->
+      <div class="signIn">
+        <button class="signIn_btn">SIGN IN</button>
+      </div>
+    </nav>
+    <!-- Middle Part -->
+    <nav class="nav middlePart">
+      <h1 class="MainHeading">
+        iPannel make your great next hire<br />Fast and Time Saving
+      </h1>
+
+      <p class="TextBelowMainHeading">
+        Our Enterprise upskilling solution combines immersive hands-on learning,
+        high quality content,<br />
+        24x7 support, robust reporting, and technical integrations.
+      </p>
+
+      <center>
+        <button class="SampleInterview">SAMPLE INTERVIEW</button>
+        &nbsp;
+        <button class="ContactForADemo">CONTACT FOR A DEMO</button>
+      </center>
+    </nav>
+
+    <img src="Images/Mask_Group_42@2x.png" style="width: 100%" />
+
+    <nav class="Stats">
+      <ul class="StatsList">
+        <li>
+          <p class="Count">3,00,000</p>
+          <p class="StatText">Skilled People</p>
+        </li>
+
+        <li>
+          <p class="Count">4000+</p>
+          <p class="StatText">Happy Clients</p>
+        </li>
+        <li>
+          <p class="Count">2,00,000</p>
+          <p class="StatText">Hires</p>
+        </li>
+        <li>
+          <p class="Count">1,00,000</p>
+          <p class="StatText">Live Interviews</p>
+        </li>
+        <li>
+          <p class="Count">1,00,000</p>
+          <p class="StatText">Assessments</p>
+        </li>
+      </ul>
+    </nav>
+    <nav class="Whole">
+      <div class="WhatIsiPannel">
+        <center>
+          <span class="Heading">What is IPannel?</span>
+        </center>
+        <p class="HeadingText">
+          This on-demand service helps the candidates take the interviews at
+          their preferred timings<br />
+          without any dependency on interpersonal communication.
+        </p>
+
+        <!-- <div> -->
+        <!-- Main Div -->
+        <div style="float: left">
+          <img
+            class="Image1"
+            src="Images/pexels-karolina-grabowska-4491@2x.png"
+          />
+          <!-- Set Div As your requirement -->
+        </div>
+        <div style="float: right; width: 50%">
+          <br />
+          <p class="OurMission">Our Mission</p>
+
+          <p class="OurMissionText">
+            We are catering our services globally across 25+ countries
+            Including, USA, UK, UAE, Singapore, Australia, India etc., we have
+            set up a firm global footprint transcending boundaries and reaching
+            out to students from far and wide. Our passionate and dedicated team
+            of experts have successfully trained over 1,12,000 students and
+            professionals in multifarious domains
+          </p>
+          <br />
+          <p class="OurVision">Our Vision</p>
+
+          <p class="OurVisionText">
+            We are catering our services globally across 25+ countries
+            Including, USA, UK, UAE, Singapore, Australia, India etc., we have
+            set up a firm global footprint transcending boundaries and reaching
+            out to students from far and wide. Our passionate and dedicated team
+            of experts have successfully trained over 1,12,000 students and
+            professionals in multifarious domains
+          </p>
+          <!-- Set Div As your requirement -->
+        </div>
+        <!-- </div> -->
+
+        <!-- <div class="split left">
+        <div class="centered">
+          <img
+            class="Image1"
+            src="Images/pexels-karolina-grabowska-4491@2x.png"
+          />
+        </div>
+      </div>
+
+      <div class="split right">
+        <div class="centered">
+          <p>
+            <bold> Our Mission</bold> <br />We are catering our services
+            globally across 25+ countries Including, USA, UK, UAE, Singapore,
+            Australia, India etc., we have set up a firm global footprint
+            transcending boundaries and reaching out to students from far and
+            wide. Our passionate and dedicated team of experts have successfully
+            trained over 1,12,000 students and professionals in multifarious
+            domains
+          </p>
+        </div>
+      </div> -->
+      </div>
+    </nav>
+  </body>
+</html>
